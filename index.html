@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>GitHub DashBoard</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <path d="M 10 2 C 8.346 2 7 3.346 7 5 L 7 41 C 7 42.654 8.346 44 10 44 L 11 44 L 11 42 L 10 42 C 9.449 42 9 41.552 9 41 L 9 36 L 41 36 L 41 41 C 41 41.552 40.552 42 40 42 L 25 42 L 25 44 L 40 44 C 41.654 44 43 42.654 43 41 L 43 5 C 43 3.346 41.654 2 40 2 L 10 2 z M 14 8 L 18 8 L 18 12 L 14 12 L 14 8 z M 14 17 L 18 17 L 18 21 L 14 21 L 14 17 z M 14 26 L 18 26 L 18 30 L 14 30 L 14 26 z M 13 38 L 13 48.625 L 18 46.125 L 23 48.625 L 23 38 L 13 38 z"/>
+        </svg>
+        <h1 class="header__title">GitHub DashBoard</h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-line">
+    <div class="container">
+      <div class="search-line__inner">
+        <input class="search-line__input" type="text" placeholder="repository name">
+        <button class="button button__search">
+          <svg class="button__icon" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48px" height="48px">    
+            <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="sort">
+    <div class="container">
+      <div class="sort__inner">
+        <span class="sort__title">Sort by:</span>
+        <ul class="sort__items">
+          <li class="sort__item active">
+            <span>stars</span>
+            <svg class="sort__icon icon__desc" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sort-amount-down" class="svg-inline--fa fa-sort-amount-down fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor" d="M304 416h-64a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm-128-64h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.37 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm256-192H240a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h192a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm-64 128H240a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM496 32H240a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h256a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"></path>
+            </svg>
+          </li>
+          <li class="sort__item">forks</li>
+          <li class="sort__item">commit date</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="repo">
+    <div class="container container_repos">
+      <ul class="repo__items">
+
+        <li class="repo__item">
+          <h2 class="repo__name"><a class="link link_header" href="#" target="_blank">freeCodeCamp/freeCodeCamp</a></h2>
+          <p class="repo__description">freeCodeCamp.org's open source codebase and curriculum. Learn to code at home.</p>
+          <div class="repo__stats">
+            <a class="link repo__stars" href="#" target="_blank">
+              <svg class="repo__stars-icon" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              <span class="repo__stars-count">350k</span>
+            </a>
+            <div class="repo__commit-date">Updated 18 hours ago</div>
+          </div>
+        </li>
+
+        <li class="repo__item">
+          <h2 class="repo__name"><a class="link link_header" href="#" target="_blank">freeCodeCamp/freeCodeCamp</a></h2>
+          <p class="repo__description">freeCodeCamp.org's open source codebase and curriculum. Learn to code at home.</p>
+          <div class="repo__stats">
+            <a class="link repo__stars" href="#" target="_blank">
+              <svg class="repo__stars-icon" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              <span class="repo__stars-count">350k</span>
+            </a>
+            <div class="repo__commit-date">Updated 18 hours ago</div>
+          </div>
+        </li>
+
+        <li class="repo__item">
+          <h2 class="repo__name"><a class="link link_header" href="#" target="_blank">freeCodeCamp/freeCodeCamp</a></h2>
+          <p class="repo__description">freeCodeCamp.org's open source codebase and curriculum. Learn to code at home.</p>
+          <div class="repo__stats">
+            <a class="link repo__stars" href="#" target="_blank">
+              <svg class="repo__stars-icon" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              <span class="repo__stars-count">350k</span>
+            </a>
+            <div class="repo__commit-date">Updated 18 hours ago</div>
+          </div>
+        </li>
+
+        <li class="repo__item">
+          <h2 class="repo__name"><a class="link link_header" href="#" target="_blank">freeCodeCamp/freeCodeCamp</a></h2>
+          <p class="repo__description">freeCodeCamp.org's open source codebase and curriculum. Learn to code at home.</p>
+          <div class="repo__stats">
+            <a class="link repo__stars" href="#" target="_blank">
+              <svg class="repo__stars-icon" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              <span class="repo__stars-count">350k</span>
+            </a>
+            <div class="repo__commit-date">Updated 18 hours ago</div>
+          </div>
+        </li>
+
+        <li class="repo__item">
+          <h2 class="repo__name"><a class="link link_header" href="#" target="_blank">freeCodeCamp/freeCodeCamp</a></h2>
+          <p class="repo__description">freeCodeCamp.org's open source codebase and curriculum. Learn to code at home.</p>
+          <div class="repo__stats">
+            <a class="link repo__stars" href="#" target="_blank">
+              <svg class="repo__stars-icon" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              <span class="repo__stars-count">350k</span>
+            </a>
+            <div class="repo__commit-date">Updated 18 hours ago</div>
+          </div>
+        </li>
+
+        <li class="repo__item">
+          <h2 class="repo__name"><a class="link link_header" href="#" target="_blank">freeCodeCamp/freeCodeCamp</a></h2>
+          <p class="repo__description">freeCodeCamp.org's open source codebase and curriculum. Learn to code at home.</p>
+          <div class="repo__stats">
+            <a class="link repo__stars" href="#" target="_blank">
+              <svg class="repo__stars-icon" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              <span class="repo__stars-count">350k</span>
+            </a>
+            <div class="repo__commit-date">Updated 18 hours ago</div>
+          </div>
+        </li>
+
+        <li class="repo__item">
+          <h2 class="repo__name"><a class="link link_header" href="#" target="_blank">freeCodeCamp/freeCodeCamp</a></h2>
+          <p class="repo__description">freeCodeCamp.org's open source codebase and curriculum. Learn to code at home.</p>
+          <div class="repo__stats">
+            <a class="link repo__stars" href="#" target="_blank">
+              <svg class="repo__stars-icon" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              <span class="repo__stars-count">350k</span>
+            </a>
+            <div class="repo__commit-date">Updated 18 hours ago</div>
+          </div>
+        </li>
+
+        <li class="repo__item">
+          <h2 class="repo__name"><a class="link link_header" href="#" target="_blank">freeCodeCamp/freeCodeCamp</a></h2>
+          <p class="repo__description">freeCodeCamp.org's open source codebase and curriculum. Learn to code at home.</p>
+          <div class="repo__stats">
+            <a class="link repo__stars" href="#" target="_blank">
+              <svg class="repo__stars-icon" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              <span class="repo__stars-count">350k</span>
+            </a>
+            <div class="repo__commit-date">Updated 18 hours ago</div>
+          </div>
+        </li>
+
+        <li class="repo__item">
+          <h2 class="repo__name"><a class="link link_header" href="#" target="_blank">freeCodeCamp/freeCodeCamp</a></h2>
+          <p class="repo__description">freeCodeCamp.org's open source codebase and curriculum. Learn to code at home.</p>
+          <div class="repo__stats">
+            <a class="link repo__stars" href="#" target="_blank">
+              <svg class="repo__stars-icon" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              <span class="repo__stars-count">350k</span>
+            </a>
+            <div class="repo__commit-date">Updated 18 hours ago</div>
+          </div>
+        </li>
+
+        <li class="repo__item">
+          <h2 class="repo__name"><a class="link link_header" href="#" target="_blank">freeCodeCamp/freeCodeCamp</a></h2>
+          <p class="repo__description">freeCodeCamp.org's open source codebase and curriculum. Learn to code at home.</p>
+          <div class="repo__stats">
+            <a class="link repo__stars" href="#" target="_blank">
+              <svg class="repo__stars-icon" aria-label="star" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              <span class="repo__stars-count">350k</span>
+            </a>
+            <div class="repo__commit-date">Updated 18 hours ago</div>
+          </div>
+        </li>
+        
+      </ul><!-- ./repo__items -->
+    </div><!-- ./container ./container_repos -->
+  </section><!-- ./repo -->
+
+  <section class="pagination">
+    <div class="container">
+      <ul class="pagination__items">
+        <li class="pagination__item pagination__item-outside disabled">
+          <svg class="pagination__icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path>
+          </svg>
+          <span class="pagination__text">Previous</span>
+        </li>
+        <li class="pagination__item active">1</li>
+        <li class="pagination__item">2</li>
+        <li class="pagination__item">3</li>
+        <li class="pagination__item">4</li>
+        <li class="pagination__item">5</li>
+        <li class="pagination__item pagination__item-outside">
+          <span class="pagination__text">Next</span>
+          <svg class="pagination__icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
