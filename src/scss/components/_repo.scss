@@ -23,6 +23,28 @@
     margin-bottom: 8px;
   }
 
+  &__topics {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+  }
+
+  &__topic {
+    margin: 0 10px 8px 0;
+    padding: 4px 10px;
+    
+    font-weight: 400;
+    border-radius: 5px;
+    background: $blue-light;
+    color: $blue;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   &__description {
     margin-bottom: 8px;
   }
